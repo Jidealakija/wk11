@@ -1,9 +1,9 @@
 import './globals.css'
-import { Fasthand } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const fast = Fasthand({ 
+const popp = Poppins({ 
   subsets: ['latin'],
   weight: ['400'] 
 })
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={fast.className}>
+      <body className={popp.className}>
         <Navbar/>
         {children}
         <Footer/>
